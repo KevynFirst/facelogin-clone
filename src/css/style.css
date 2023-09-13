@@ -1,0 +1,245 @@
+/*aplica fonte em todo o documento*/
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+/* centraliza elementos */
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/* limpa os efeitos do float */
+.clear{clear: both;}
+
+header{
+    background-color: #2359af;
+    padding: 8px 0;
+}
+/* flutuação do elemento para direita */
+.logo{
+    float: left;
+}
+
+.logo h2{
+    color: white;
+    font-size: 29px;
+    font-weight: bolder;
+}
+/* flutuação do elemento para esquerda*/
+form.login{
+    float: right;
+}
+/* para que os elementos input fiquem na mesma linha */
+form.login .form-elemento{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form.login .form-elemento p{
+    color: white;
+    font-size: 14px;
+}
+/* mexer especifico nos inputs */
+.form-elemento input[type=email],
+.form-elemento input[type=password]{
+    margin: 4px 0;
+    border: 0;
+    height: 20px;
+    padding-left: 3px;
+}
+
+.form-elemento input[type=submit]{
+    cursor:pointer;
+    border:2px solid #215ab2;
+    background: #1969e5;
+    color: white;
+    padding: 3px 5px;
+}
+/* Mudar quando o mouse estiver em cima */
+.form-elemento input[type=submit]:hover{
+    background: #215ab2;
+}
+
+/* Gradiente no fundo da seção principal */
+section.main{
+    background: linear-gradient(white, #d3d8e8);
+    padding: 40px 0;
+}
+/* flutuação do elemento para direita com 70% de ocupação da tela*/
+.rede-social{
+    float: left;
+    width: 60%;
+}
+
+.rede-social img{
+    max-width: 100%;
+}
+/* flutuação do elemento para esquerda com 30% da ocupação da tela*/
+.abrir-conta{
+    float: left;
+    width: 40%;
+}
+
+.abrir-conta h2{
+    color: black;
+    font-size: 35px;
+}
+
+.abrir-conta h3{
+    color: rgb(30, 30, 30);
+    font-size: 21px;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+form.criar-conta{
+    margin-top: 10px;
+}
+/* classes padrões com flutuação e largura em 50% */
+.w50{
+    padding: 0 5px; 
+    width: 50%;
+    float: left;
+}
+/* classes padrões com flutuação e largura em 100% */
+.w100{
+    padding: 0 5px;
+    width: 100%;
+    float: left;
+}
+
+form.criar-conta input{
+    width: 100%;
+    margin-top: 8px;
+}
+
+form.criar-conta input[type=email],
+form.criar-conta input[type=text],
+form.criar-conta input[type=password]{
+    height: 40px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+form.criar-conta input[type=submit]{
+    height: 40px;
+    background: linear-gradient(#67ae55, #578843);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    max-width: 200px;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
+form.criar-conta input[placeholder=Nome],
+form.criar-conta input[placeholder=Sobrenome],
+form.criar-conta input[placeholder=E-mail],
+form.criar-conta input[placeholder=Senha]{
+    padding-left: 5px;
+}
+
+form .w100 h2{
+    margin-top: 10px;
+    color: #1d2129;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+form select.nascimento{
+    float: left;
+    margin-top: 5px;
+}
+
+.input-radio{
+    margin: 8px 10px;
+    float: left;
+}
+
+.input-radio h2{
+    display: inline-block;
+}
+/* O important sobresai sobre qualquer instrução já passada para o elemento ou classe */
+.input-radio input[type=radio]{
+    width: auto !important;
+    display: inline-block;
+}
+
+section.linguas{
+    padding: 30px 0;
+    background: white;
+}
+
+section.linguas a{
+    padding-right: 15px;
+    font-size: 12px;
+    color: #365899;
+}
+
+section.linguas a.selected-lingua{
+    color: #737373;
+}
+
+
+section.linguas .center{
+    padding: 0 8px 10px 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer.rodape p{
+    position: relative;
+    text-align: center;
+    top: 180px;
+}
+
+/* quando a tela for menor ou igual a 768px faça essas alterações */
+@media screen and (max-width: 768px) {
+    .logo, form.login{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    form.login{
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+    form.login .form-elemento{
+        display:block;
+        margin: 10px 0;
+    }
+    
+    form.login .form-elemento p{
+        color: white;
+        font-size: 14px;
+    }
+
+    .form-elemento input[type=email],
+    .form-elemento input[type=password]{
+        margin: 4px 0;
+        border: 0;
+        height: 20px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .form-elemento input[type=submit]{
+        width: 140px;
+    }
+
+    .rede-social{
+        display: none;
+    }
+    
+    .abrir-conta{
+        width: 100%;
+    }
+
+    footer.rodape p{
+        position: static;
+        text-align: center;
+    }
+}
