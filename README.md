@@ -2,7 +2,7 @@
 
 <h2 align="center">📖Descrição</h2>
 
-<p align="center">Clone do login do facebook desenvolvido no curso Front End completo da Danki Code, com as tecnologias html5 e CSS3 focado na utilzação da propriedade float, totalmente responsivo.</p>
+<p align="center">Clone do login do facebook desenvolvido no curso Front End completo da Danki Code, com as tecnologias HTML5 e CSS3 focado na utilzação da propriedade float, totalmente responsivo.</p>
 
 <h2 align="center">🖥Preview</h2>
 
@@ -16,6 +16,9 @@
 - [HTML5](https://html.com/)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
+<h2 align="center">⚡️ Demonstração</h2>
+<p>Para testar o projeto, basta baixar o <a href="https://github.com/KevynFirst/fblogin-clone-float/archive/refs/heads/main.zip">arquivo</a> e extrai-lo </p>
+<p>Abra a pasta de extração e execute o arquivo <span style="text-decoration:underline">index.html</span> </p>
 
 ## Obrigado por visitar meu projeto 😉
 <i>Você pode conferir outros projetos que desenvolvi aqui no meu GitHub, ou entrar em contato comigo pelos demais links.</i>
