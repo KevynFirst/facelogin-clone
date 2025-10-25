@@ -10,6 +10,10 @@ Front-end clone do login do facebook, repassado no curso da Danki Code Front-end
   <a href="#-preview">Preview</a>
 </p>
 
+<p align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Danki-Course-blue">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Dev-Project-purple">	  
+</p>
 
 <br>
 
